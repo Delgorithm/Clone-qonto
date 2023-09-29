@@ -18,7 +18,7 @@ const Hamburger = () => {
             >
             {!isOpen ? (
                 <div className='flex flex-col'>
-                    <div className="border-b-2 border-solid border-white w-5 mb-4"></div>
+                    <div className="border-b-2 border-solid border-white w-5 mb-3"></div>
                     <div className="border-b-2 border-solid border-white w-5"></div>
                 </div>
             ) : (

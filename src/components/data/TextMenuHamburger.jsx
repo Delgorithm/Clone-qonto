@@ -20,7 +20,7 @@ import {
 
 const TextMenuHamburger = () => {
 
-    const Solutions = () => [
+    const Solutions = [
         {
             id: 1,
             logo: <BsFillPersonFill />,
@@ -57,9 +57,9 @@ const TextMenuHamburger = () => {
             name: `Aide à la création d'entreprise`,
             description: 'Rédaction status, immatriculation'
         },
-    ]
+    ];
 
-    const Fonctionnalités = () => [
+    const Fonctionnalites = [
         {
             id: 1,
             logo: <BsBagFill />,
@@ -84,9 +84,9 @@ const TextMenuHamburger = () => {
             name: 'Comptabilité & Reporting',
             description: 'Automatisez vos processus'
         },
-    ]
+    ];
 
-    const Ressources = () => [
+    const Ressources = [
         {
             id: 1,
             logo: <BsFillChatTextFill />,
@@ -122,9 +122,9 @@ const TextMenuHamburger = () => {
             logo: <BsFillPersonLinesFill />,
             name: 'Témoignages clients',
         },
-    ]
+    ];
 
-    const Tarifs = () => [
+    const Tarifs = [
         {
             id: 1,
             logo: <BsFillKeyFill />,
@@ -148,7 +148,14 @@ const TextMenuHamburger = () => {
             logo: <BsFillBuildingsFill />,
             name: 'Pour les PME',
         },
-    ]
+    ];
+
+    return {
+        Solutions,
+        Fonctionnalites,
+        Ressources,
+        Tarifs,
+    };
 }
 
 export default TextMenuHamburger
