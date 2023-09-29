@@ -9,7 +9,9 @@ const BtnOpenAccount = () => {
 
   return (
     <div>
-        <button onClick={handleClick}>
+        <button 
+          className='text-black bg-white p-1.5 rounded-md text-xs'
+          onClick={handleClick}>
             Ouvrir un compte
         </button>
     </div>
