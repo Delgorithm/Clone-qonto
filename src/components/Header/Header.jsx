@@ -3,6 +3,7 @@ import BtnOpenAccount from '../Buttons/BtnOpenAccount'
 import Nav from '../Nav/Nav'
 import HeaderText from '../data/HeaderText'
 import BtnOffers from '../Buttons/BtnOffers'
+import Accordion from '../DropdownAccordion/Accordion'
 
 const Header = () => {
   return (
@@ -23,6 +24,9 @@ const Header = () => {
             alt="Image of Qonto's application"
             className='absolute bottom-0 right-0 left-20 opacity-40 -z-10'
           />
+        </div>
+        <div className='m-4'>
+          <Accordion />
         </div>
       </div>
     </div>
