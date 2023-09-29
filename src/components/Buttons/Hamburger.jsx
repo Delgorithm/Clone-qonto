@@ -30,7 +30,7 @@ const Hamburger = () => {
             </button>
 
             {isMenuVisible && (
-                <div className='fixed inset-x-0 top-16 bg-blue-500 w-screen h-screen'>
+                <div className='fixed inset-x-0 top-16 bg-blue-500 w-screen h-screen z-50'>
                     <p>test</p>
                 </div>
             )}

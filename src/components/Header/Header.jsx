@@ -14,7 +14,7 @@ const Header = () => {
             <h1 className="text-white text-6xl">{item.title}</h1>
             <p className='text-white font-light text-lg'>{item.text}</p>
             {item.id === 2 ? <BtnOffers /> : null}
-            <p className='text-gray-400 font-thin text-sm'>{item.subtext}</p>
+            <p className='text-gray-100 font-thin text-sm'>{item.subtext}</p>
           </div>
         ))}
         <div>
