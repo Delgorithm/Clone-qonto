@@ -1,54 +1,23 @@
-import React, { useState } from 'react'
-import { 
-  FaAngleDown,
-  FaAngleUp
-} from "react-icons/fa6"
-import AccordionText from "../data/AccordionText"
-
+import React, { useState } from 'react';
+import ContentAccordion from './ContentAccordion';
+import AccordionText from '../data/AccordionText';
+import BtnAccordion from '../Buttons/BtnAccordion';
 
 const Accordion = () => {
+  const [open, setOpen] = useState(null);
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleAccordion = () => {
-    setIsOpen(!isOpen);
+  const toggleContext = (index) => {
+    setOpen(open === index ? null : index);
   }
 
   return (
-    <div className='flex flex-col gap-2'>
-
-      <button 
-        className='bg-cyan-100 p-4 rounded-lg flex justify-between items-center cursor-pointer'
-        onClick={toggleAccordion}
-      >
-        Compte pro & Cartes
-
-        {!isOpen ? (
-          <FaAngleDown />
-        ) : (
-          <FaAngleUp />
-        )}
-      </button>
-        {isOpen && (
-          <div className="bg-cyan-100">
-          </div>
-        )}
-
-      <button className='bg-yellow-100 p-4 rounded-lg flex justify-between items-center cursor-pointer'>
-        Factures clients et fournisseurs
-        <FaAngleDown /> 
-      </button>
-
-      <button className='bg-purple-200 p-4 rounded-lg flex justify-between items-center cursor-pointer'>
-        Gestion des dépenses d'équipe
-        <FaAngleDown /> 
-      </button>
-
-      <button className='bg-orange-200 p-4 rounded-lg flex justify-between items-center cursor-pointer'>
-        Comptabilité & Reporting
-        <FaAngleDown /> 
-      </button>
-
+    <div className='flex flex-col gap-2 bg-red-200'>
+      {AccordionText.map((item, index) => (
+        <div key={item.id} className={`${item.bg} rounded-lg`}>
+          <BtnAccordion text={item.name} open={open === index} toggle={() => toggleContext(index)}/>
+          {open === index && <ContentAccordion text={item.text}/>}
+        </div>
+      ))}
     </div>
   )
 }

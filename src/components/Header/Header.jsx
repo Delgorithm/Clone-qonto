@@ -25,7 +25,7 @@ const Header = () => {
             className='absolute bottom-0 right-0 left-20 opacity-40 -z-10'
           />
         </div>
-        <div className='m-4'>
+        <div className='m-4 py-16'>
           <Accordion />
         </div>
       </div>
