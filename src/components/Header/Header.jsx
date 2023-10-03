@@ -20,13 +20,15 @@ const Header = () => {
         ))}
         <div>
           <img 
-            src="../img/headerimg.png" 
+            src="src/img/headerimg.png" 
             alt="Image of Qonto's application"
-            className='absolute bottom-0 right-0 left-20 opacity-40 -z-10'
+            className='w-100 absolute bottom-0 opacity-40 -z-10'
           />
         </div>
-        <div className='m-4 py-16'>
-          <Accordion />
+        <div className='bg-black translate-y-36 min-h-screen'>
+          <div className='m-4'>
+            <Accordion />
+          </div>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
-import img1 from '/public/img/comptepro.png';
-import img2 from '/public/img/facture.png'; 
-import img3 from '/public/img/gestiondepenses.png';
-import img4 from '/public/img/compta.png';
+import img1 from '/src/img/comptepro.png';
+import img2 from '/src/img/facture.png'; 
+import img3 from '/src/img/gestiondepenses.png';
+import img4 from '/src/img/compta.png';
 
 const AccordionText = [
     {
