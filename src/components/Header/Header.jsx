@@ -4,6 +4,7 @@ import Nav from '../Nav/Nav'
 import HeaderText from '../data/HeaderText'
 import BtnOffers from '../Buttons/BtnOffers'
 import Accordion from '../DropdownAccordion/Accordion'
+import Middle from '../middle/middle'
 
 const Header = () => {
   return (
@@ -20,7 +21,7 @@ const Header = () => {
         ))}
         <div>
           <img 
-            src="src/img/headerimg.png" 
+            src="../img/headerimg.png" 
             alt="Image of Qonto's application"
             className='w-100 absolute bottom-0 opacity-40 -z-10'
           />
@@ -29,6 +30,7 @@ const Header = () => {
           <div className='m-4'>
             <Accordion />
           </div>
+            <Middle />
         </div>
       </div>
     </div>

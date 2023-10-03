@@ -11,14 +11,14 @@ const Accordion = () => {
   }
 
   return (
-    <div className='flex flex-col gap-2 '>
+    <div className='flex flex-col gap-2'>
       {AccordionText.map((item, index) => (
-        <div key={item.id} className={`${item.bg} rounded-lg`}>
+        <div key={item.id} className={`${item.bg} rounded-lg z-10`}>
           <BtnAccordion text={item.name} open={open === index} toggle={() => toggleContext(index)}/>
           {open === index && (
             <div>
               <ContentAccordion text={item.text}/>
-              <div className='w-full flex justify-center bg-white -translate-y-2 '>
+              <div className='w-full flex justify-center bg-white -translate-y-2'>
                 <img src={item.img} />
               </div>
             </div>
