@@ -8,6 +8,9 @@ import img6 from '/img/independants.png'
 import img7 from '/img/tpe.png'
 import img8 from '/img/pme.png'
 import img9 from '/img/associations.png'
+import img10 from '/img/ourcard01.png'
+import img11 from '/img/ourcard02.png'
+import img12 from '/img/ourcard03.png'
 
     
 const middleImg = [
@@ -16,7 +19,10 @@ const middleImg = [
         img1: img1,
         img2: img2,
         img3: img3,
-        img4: img4
+        img4: img4,
+        img10: img10,
+        img11: img11,
+        img12: img12,
     }
 ];
 
@@ -65,7 +71,7 @@ const middleBlogText = [
     },
 ]
 
-const pro = [
+const proInformation = [
     {
         id: 1,
         text: "Tous vos besoins financiers sur une seule app."
@@ -81,13 +87,7 @@ const pro = [
     {
         id: 4,
         text: "Ouvrir un compte pro",
-        icon: <FaArrowRight />
     },
-    {
-        id: 5,
-        icon: <FaArrowRight />,
-        icon2: <FaArrowLeft />
-    }
 ]
 
 const cardPro = [
@@ -147,4 +147,4 @@ const cardPro = [
     }
 ]
 
-export { middleImg, middleText, middleBlogText, pro, cardPro, FaArrowLeft, FaArrowRight };
+export { middleImg, middleText, middleBlogText, proInformation, cardPro, FaArrowLeft, FaArrowRight };
