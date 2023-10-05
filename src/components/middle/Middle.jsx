@@ -8,7 +8,9 @@ import { Link } from 'react-router-dom'
 
 const Middle = () => {
 
-  const customClasses = "bg-black text-white p-4 w-full"
+  const customOpenBtn = "bg-black text-white p-4 w-full";
+
+  const customDiscoverCardBtn = 'p-4 rounded-lg flex items-center bg-black border-solid border-2 border-white-600 cursor-pointer hover:text-black hover:bg-white hover:border-black';
 
   const [isButtonVisible, setIsButtonVisible] = useState(false);
 
@@ -16,7 +18,6 @@ const Middle = () => {
 
 
   return (
-    <div>
         <div className='bg-white h-screen rounded-t-2xl py-4 -translate-y-11'>
             {middleImg.map((item, index) => (
                 <div>
@@ -87,7 +88,7 @@ const Middle = () => {
 
                     {!isButtonVisible && item.id === 5 && (
                         <div className='my-4 w-full'>
-                            <BtnOpenAccount customClasses={customClasses}/>
+                            <BtnOpenAccount customOpenBtn={customOpenBtn}/>
                         </div>
                     )}
 
@@ -102,7 +103,7 @@ const Middle = () => {
                         <img src={item.img12} alt="" className='absolute top-[23.7em] w-64 left-[9.7em]' />
                     </div>
                     <div className='text-white bg-black h-[32em] flex justify-center items-center'>
-                        <BtnDiscoverCards />
+                        <BtnDiscoverCards customDiscoverCardBtn={customDiscoverCardBtn}/>
                     </div>
                 </div>
             ))}
@@ -118,9 +119,9 @@ const Middle = () => {
                             {item.id === 3 && <p className='text-2xl'>{item.text}</p>}
                         </div>
                         <div className='flex justify-between items-center'>
-                            {item.id === 4 && <p className='flex items-center gap-2'>{item.text} <FaArrowRight /></p>}
+                            {item.id === 4 && <p className='flex items-center gap-2 underline cursor-pointer'>{item.text} <FaArrowRight /></p>}
                             {item.id === 4 && (
-                                <div className='flex items-center gap-5 bg-red-200'>
+                                <div className='flex items-center gap-5'>
                                     <FaArrowLeft className='cursor-pointer' />
                                     <FaArrowRight className='cursor-pointer' />
                                 </div>
@@ -128,11 +129,92 @@ const Middle = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+                
+                <div className='flex gap-10 py-4 w-full overflow-x-auto -translate-y-24'>
+                    {cardPro.map((item, index) => (
+                        <div 
+                            key={item.id}
+                            className='hover:scale-105 duration-100 ease-in-out'
+                        >
+                            
+                            {item.id === 1 && (
+                                <div className='bg-cyan-100 w-72 flex flex-col justify-center items-center rounded-lg border-solid border-2 border-gray-400'>
+                                    <p className='text-center p-1 rounded-t-lg border-b-2 border-gray-400 w-full'>{item.title}</p>
+                                    <img src={item.img} alt="" className='w-36' />
+                                    <p className='text-xl p-2'>{item.subtitle}</p>
+                                    <p className='text-center text-xs pb-2 text-gray-400'>{item.text}</p>
+                                </div>
+                            )}
 
+                            {item.id === 2 && (
+                                <div className='bg-cyan-100 w-72 flex flex-col justify-center items-center rounded-lg border-solid border-2 border-gray-400'>
+                                    <p className='text-center p-3 rounded-t-lg border-b-2 border-gray-400 w-full'>{item.title}</p>
+                                    <img src={item.img} alt="" className='w-36' />
+                                    <p className='text-xl p-2'>{item.subtitle}</p>
+                                    <p className='text-center text-xs pb-2 text-gray-400'>{item.text}</p>
+                                </div>
+                            )}
+
+                            {item.id === 3 && (
+                                <div className='bg-cyan-100 w-72 flex flex-col justify-center items-center rounded-lg border-solid border-2 border-gray-400'>
+                                    <p className='text-center p-3 rounded-t-lg border-b-2 border-gray-400 w-full'>{item.title}</p>
+                                    <img src={item.img} alt="" className='w-36' />
+                                    <p className='text-xl p-2'>{item.subtitle}</p>
+                                    <p className='text-center text-xs pb-2 text-gray-400'>{item.text}</p>
+                                </div>
+                            )}
+
+                            {item.id === 4 && (
+                                <div className='bg-cyan-100 w-72 flex flex-col justify-center items-center rounded-lg border-solid border-2 border-gray-400'>
+                                    <p className='text-center p-3 rounded-t-lg border-b-2 border-gray-400 w-full'>{item.title}</p>
+                                    <img src={item.img} alt="" className='w-36' />
+                                    <p className='text-xl p-2'>{item.subtitle}</p>
+                                    <p className='text-center text-xs pb-2 text-gray-400'>{item.text}</p>
+                                </div>
+                            )}
+
+                            {item.id === 5 && (
+                                <div className='bg-cyan-100 w-72 flex flex-col justify-center items-center rounded-lg border-solid border-2 border-gray-400'>
+                                    <p className='text-center p-3 rounded-t-lg border-b-2 border-gray-400 w-full'>{item.title}</p>
+                                    <img src={item.img} alt="" className='w-36' />
+                                    <p className='text-xl p-2'>{item.subtitle}</p>
+                                    <p className='text-center text-xs pb-2 text-gray-400'>{item.text}</p>
+                                </div>
+                            )}
+
+                            {item.id === 6 && (
+                                <div className='bg-cyan-100 w-72 flex flex-col justify-center items-center rounded-lg border-solid border-2 border-gray-400'>
+                                    <p className='text-center p-3 rounded-t-lg border-b-2 border-gray-400 w-full'>{item.title}</p>
+                                    <img src={item.img} alt="" className='w-36' />
+                                    <p className='text-xl p-2'>{item.subtitle}</p>
+                                    <p className='text-center text-xs pb-2 text-gray-400'>{item.text}</p>
+                                </div>
+                            )}
+
+                            {item.id === 7 && (
+                                <div className='bg-cyan-100 w-72 flex flex-col justify-center items-center rounded-lg border-solid border-2 border-gray-400'>
+                                    <p className='text-center p-3 rounded-t-lg border-b-2 border-gray-400 w-full'>{item.title}</p>
+                                    <img src={item.img} alt="" className='w-36' />
+                                    <p className='text-xl p-2'>{item.subtitle}</p>
+                                    <p className='text-center text-xs pb-2 text-gray-400'>{item.text}</p>
+                                </div>
+                            )}
+
+                            {item.id === 8 && (
+                                <div className='bg-cyan-100 w-72 flex flex-col justify-center items-center rounded-lg border-solid border-2 border-gray-400'>
+                                    <p className='text-center p-1 rounded-t-lg border-b-2 border-gray-400 w-full'>{item.title}</p>
+                                    <img src={item.img} alt="" className='w-36' />
+                                    <p className='text-xl p-2'>{item.subtitle}</p>
+                                    <p className='text-center text-xs pb-2 text-gray-400'>{item.text}</p>
+                                </div>
+                            )}
+
+                        </div>
+                    ))}
+                </div>
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Middle

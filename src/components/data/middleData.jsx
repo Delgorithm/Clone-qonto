@@ -12,6 +12,15 @@ import img10 from '/img/ourcard01.png'
 import img11 from '/img/ourcard02.png'
 import img12 from '/img/ourcard03.png'
 
+import img13 from '/img/carroussel1.png'
+import img14 from '/img/carroussel2.png'
+import img15 from '/img/carroussel3.png'
+import img16 from '/img/carroussel4.png'
+import img17 from '/img/carroussel5.png'
+import img18 from '/img/carroussel6.png'
+import img19 from '/img/carroussel7.png'
+import img20 from '/img/carroussel8.png'
+
     
 const middleImg = [
     {
@@ -88,54 +97,77 @@ const proInformation = [
         id: 4,
         text: "Ouvrir un compte pro",
     },
+    {
+        id: 5,
+        title: "Factures clients et fournisseurs",
+        text: "Centraliser ses factures"
+    },
+    {
+        id: 6,
+        title: "Gestion des dépenses d'équipe",
+        text: "Améliorer sa gestion des dépenses",
+    },
+    {
+        id: 7,
+        title: "Comptabilité & Reporting",
+        text: "Simplifier sa comptabilité"
+    },
 ]
 
 const cardPro = [
     {
         id: 1,
         title: "Paiement",
+        img: img13,
         subtitle: "Compte pro",
         text: "IBAN professionnels, pour payer et être payé rapidement"
     },
     {
         id: 2,
         title: "Paiement",
+        img: img14,
         subtitle: "Cartes",
         text: "Physiques et virtuelles, Apple Pay & Google Play"
     },
     {
         id: 3,
         title: "Paiement",
+        img: img15,
         subtitle: "Sepa",
         text: "Virements SEPA instantanés prélèvements"
     },
     {
         id: 4,
         title: "Paiement",
+        img: img16,
         subtitle: "Swift",
         text: "Virements dans 25 devises"
     },
     {
         id: 5,
         title: "Paiement",
+        img: img17,
         subtitle: "TPE",
         text: "Terminal de paiement mobile Zettle"
     },
     {
         id: 6,
         title: "Gestion",
+        img: img18,
         subtitle: "Financement",
-        text: "Les solutions de prêt de nos partenaires"
+        text: "Les évolutions de prêt de nos partenaires"
     },
     {
         id: 7,
         title: "Gestion",
+        img: img19,
         subtitle: "Epargne",
         text: "Les solutions d'épargne de nos partenaires"
     },
     {
         id: 8,
         title: "Gestion",
+        img: img20,
         subtitle: "Dépôt de capital",
         text: "Dépôt de capital social ou augmentation du capital"
     },
